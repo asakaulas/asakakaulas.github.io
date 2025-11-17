@@ -1,6 +1,6 @@
 <!-- Dziugas Luscinskas, EDiF-24/1 -->
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -9,70 +9,196 @@
   <meta name="description" content="Dziugas Luscinskas CV puslapis">
   <meta name="author" content="Dziugas Luscinskas">
 
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Custom CSS File -->
+  <link href="assets/css/custom.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="services-page">
 
-  <main id="main">
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Kelly</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Paslaugos</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Paslaugos</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
 
     <!-- Services Section -->
-    <section id="services" class="services section">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Paslaugos</h2>
-          <p>Multimedijos pavyzdžiai</p>
-        </div>
-
+    <section id="services" class="services section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
+          <div class="col-lg-12">
+            <h2>Profesionalios Paslaugos</h2>
+            <p>Susipažinkite su išsamia AI ir žiniatinklio kūrimo paslaugų gama, kurią siūlau, kad padėčiau jums pasiekti savo tikslus.</p>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <h4>Vaizdo įrašas</h4>
-              <video width="100%" height="auto" controls>
-                <source src="assets/media/vaizdo_irasas.mp4" type="video/mp4">
-                Jūsų naršyklė nepalaiko vaizdo įrašo.
-              </video>
+            <!-- Services Table -->
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Paslauga</th>
+                    <th>Aprašymas</th>
+                    <th>Kaina</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Žiniatinklio kūrimas</td>
+                    <td>Individualus asmeninių ir verslo svetainių dizainas ir kūrimas</td>
+                    <td>€100</td>
+                  </tr>
+                  <tr>
+                    <td>AI konsultacijos</td>
+                    <td>Ekspertų patarimai dirbtinio intelekto įgyvendinimo ir strategijos klausimais</td>
+                    <td>€150</td>
+                  </tr>
+                  <tr>
+                    <td>Mašininis mokymasis</td>
+                    <td>Individualių ML modelių kūrimas duomenų analizei ir prognozavimui</td>
+                    <td>€200</td>
+                  </tr>
+                  <tr>
+                    <td>UI/UX dizainas</td>
+                    <td>Profesionalus sąsajos ir vartotojo patirties dizainas žiniatinklio programoms</td>
+                    <td>€120</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <h4>YouTube įrašas</h4>
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/BoUVIhtgjAw" 
-                      title="YouTube video player" frameborder="0" allowfullscreen>
-              </iframe>
+            <!-- Service Features with Lists -->
+            <div class="row mt-5">
+              <div class="col-lg-6">
+                <h3>Pagrindinės savybės</h3>
+                <ul>
+                  <li>Profesionalios AI kūrimo ekspertizės
+                    <ul>
+                      <li>Mašininio mokymosi modeliai</li>
+                      <li>Natūralios kalbos apdorojimas</li>
+                      <li>Kompiuterinės regos sprendimai</li>
+                    </ul>
+                  </li>
+                  <li>Visapusiškas žiniatinklio kūrimas</li>
+                  <li>Reaguojančio dizaino įgyvendinimas</li>
+                  <li>Veikimo optimizavimas</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <h3>Kūrimo procesas</h3>
+                <ol>
+                  <li>Pradinė konsultacija ir reikalavimų analizė
+                    <ol>
+                      <li>Suprasti jūsų verslo tikslus</li>
+                      <li>Apibrėžti projekto apimtį</li>
+                    </ol>
+                  </li>
+                  <li>Dizainas ir prototipų kūrimas</li>
+                  <li>Kūrimas ir įgyvendinimas</li>
+                  <li>Testavimas ir kokybės užtikrinimas</li>
+                  <li>Diegimas ir palaikymas</li>
+                </ol>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <h4>Garso įrašas</h4>
-              <audio controls>
-                <source src="assets/media/garso_irasas.mp3" type="audio/mpeg">
-                Jūsų naršyklė nepalaiko garso įrašo.
-              </audio>
-            </div>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- /Services Section -->
 
   </main>
 
-  <footer class="footer">
-    <div class="container text-center">
-      <p>&copy; 2025 Dziugas Luscinskas. Visos teisės saugomos.</p>
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>Visos teisės saugomos<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
   </footer>
 
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
